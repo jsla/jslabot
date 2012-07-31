@@ -50,4 +50,9 @@ module.exports = (robot) ->
     conditions.user = params.user if params.user?
 
     messages = Message.find conditions, (err, docs) ->
-      res.end JSON.stringify docs
+      jsonString = JSON.stringify docs
+      
+      if params.callback?
+        res.end "#{params.callback}(#{jsonString});"
+      else
+        res.end jsonString
