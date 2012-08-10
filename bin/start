@@ -1,3 +1,3 @@
 #!/usr/bin/env sh
 
-PORT=3020 HUBOT_IRC_SERVER="irc.freenode.net" HUBOT_IRC_ROOMS="#js.la" HUBOT_IRC_NICK="jslabot" bin/hubot -a irc --name jslabot
+HUBOT_IRC_SERVER="irc.freenode.net" HUBOT_IRC_ROOMS="#js.la" HUBOT_IRC_NICK="jslabot" bin/hubot -a irc --name jslabot
